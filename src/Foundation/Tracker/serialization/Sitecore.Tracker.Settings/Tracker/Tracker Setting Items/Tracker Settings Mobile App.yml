@@ -1,0 +1,27 @@
+﻿---
+ID: "7c1869ce-581c-4530-ba49-13450e33544c"
+Parent: "efa4df05-becf-4a09-91e3-3c0902215b88"
+Template: "e144aac6-7b4d-4352-80cd-f097f427e667"
+Path: /sitecore/system/Settings/Foundation/Tracker/Tracker Setting Items/Tracker Settings Mobile App
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T060745Z
+    - ID: "6fa99d06-15c4-4b98-9c1b-400e77e167da"
+      Hint: Channel
+      Value: "{55B3B97E-C204-47E4-BF62-7F4433E099E2}"
+    - ID: "ab433994-7189-4ee1-994f-6674d0e5cf84"
+      Hint: Goals
+      Value: "{26BC12A0-F849-4090-93C9-A13ACD5AADDD}"
+    - ID: "bd90aa6e-f90b-49e9-bc75-3a51f06ca5e4"
+      Hint: Is Tracking Active
+      Type: Checkbox
+      Value: 1
+    - ID: "d74f3dd7-da4a-4b32-8a8d-dbf9253fa2c7"
+      Hint: Service URL
+      Value: "https://sitecore.tracking.collection.service"

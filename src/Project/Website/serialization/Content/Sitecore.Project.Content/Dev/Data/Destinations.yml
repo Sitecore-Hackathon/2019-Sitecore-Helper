@@ -1,0 +1,14 @@
+﻿---
+ID: "1d9942c9-a516-430c-a31b-0fa6cfbe6e73"
+Parent: "b6dd6d39-bc75-4f4b-8efd-db2969ac4e5e"
+Template: "d3a0a890-3a52-4a1e-b7b2-e5deb1837832"
+Path: /sitecore/content/Dev/Data/Destinations
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T074846Z

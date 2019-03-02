@@ -29,12 +29,60 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83
 		documentation\images\hackathon.png = documentation\images\hackathon.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{335122FB-7F97-428E-A67D-329C7B7CB476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Serialization", "src\Foundation\Serialization\code\Sitecore.Foundation.Serialization.csproj", "{EF757FB3-6643-4AFA-BFFB-6922EC920747}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MobileApp", "MobileApp", "{20C26C27-12C2-49F0-B221-B518AA1105DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{1DE590A5-B059-485F-BE48-B278E68E6B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Project.Website", "src\Project\Website\code\Sitecore.Project.Website.csproj", "{41DC7996-FE1E-48AB-A458-7AE4BEA2CF38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.MobileApp", "src\Feature\MobileApp\code\Sitecore.Feature.MobileApp.csproj", "{21E6E3EC-34AA-49AC-9E67-FED0755C4111}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tracker", "Tracker", "{C06D781B-DD85-487C-932B-3F58AAF8619B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Tracker", "src\Foundation\Tracker\code\Sitecore.Foundation.Tracker.csproj", "{F7F40119-52A4-4287-9624-E76F340CC450}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF757FB3-6643-4AFA-BFFB-6922EC920747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF757FB3-6643-4AFA-BFFB-6922EC920747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF757FB3-6643-4AFA-BFFB-6922EC920747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF757FB3-6643-4AFA-BFFB-6922EC920747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41DC7996-FE1E-48AB-A458-7AE4BEA2CF38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41DC7996-FE1E-48AB-A458-7AE4BEA2CF38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41DC7996-FE1E-48AB-A458-7AE4BEA2CF38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41DC7996-FE1E-48AB-A458-7AE4BEA2CF38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E6E3EC-34AA-49AC-9E67-FED0755C4111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E6E3EC-34AA-49AC-9E67-FED0755C4111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E6E3EC-34AA-49AC-9E67-FED0755C4111}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{21E6E3EC-34AA-49AC-9E67-FED0755C4111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E6E3EC-34AA-49AC-9E67-FED0755C4111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E6E3EC-34AA-49AC-9E67-FED0755C4111}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F7F40119-52A4-4287-9624-E76F340CC450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F40119-52A4-4287-9624-E76F340CC450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F40119-52A4-4287-9624-E76F340CC450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7F40119-52A4-4287-9624-E76F340CC450}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854} = {DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}
+		{335122FB-7F97-428E-A67D-329C7B7CB476} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{EF757FB3-6643-4AFA-BFFB-6922EC920747} = {335122FB-7F97-428E-A67D-329C7B7CB476}
+		{20C26C27-12C2-49F0-B221-B518AA1105DB} = {17DD5718-6E13-4F2C-9738-B410396D4552}
+		{1DE590A5-B059-485F-BE48-B278E68E6B71} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
+		{41DC7996-FE1E-48AB-A458-7AE4BEA2CF38} = {1DE590A5-B059-485F-BE48-B278E68E6B71}
+		{21E6E3EC-34AA-49AC-9E67-FED0755C4111} = {20C26C27-12C2-49F0-B221-B518AA1105DB}
+		{C06D781B-DD85-487C-932B-3F58AAF8619B} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{F7F40119-52A4-4287-9624-E76F340CC450} = {C06D781B-DD85-487C-932B-3F58AAF8619B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}

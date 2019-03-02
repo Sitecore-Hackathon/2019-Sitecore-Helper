@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Travel Mania</string>
+    <string name="BackdropTitle">Travel Mania</string>
+    <string name="BackdropSubtitle">Best Things To Do Around The World</string>
+    <string name="BookNow">Book Now</string>
+    <string name="QuickView">Quick View</string>
+    <string name="ActionSettings">Settings</string>
+</resources>

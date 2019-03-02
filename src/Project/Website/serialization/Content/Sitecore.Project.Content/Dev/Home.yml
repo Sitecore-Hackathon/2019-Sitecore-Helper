@@ -1,0 +1,18 @@
+﻿---
+ID: "4103355b-1368-4aa9-b66c-57f50f5493b5"
+Parent: "f090b127-a9eb-4a49-b59a-0a5c7910904c"
+Template: "86e510cb-d0bc-4e57-b37e-8864c330d837"
+Path: /sitecore/content/Dev/Home
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T074657Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ajoshi

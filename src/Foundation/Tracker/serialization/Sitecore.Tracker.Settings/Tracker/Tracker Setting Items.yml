@@ -1,0 +1,14 @@
+﻿---
+ID: "efa4df05-becf-4a09-91e3-3c0902215b88"
+Parent: "ccbd2e87-aeec-4d0a-9dfc-5bb0949a1da3"
+Template: "f38ac661-fe5c-4523-ae08-4b3edc57ae72"
+Path: /sitecore/system/Settings/Foundation/Tracker/Tracker Setting Items
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T060505Z
