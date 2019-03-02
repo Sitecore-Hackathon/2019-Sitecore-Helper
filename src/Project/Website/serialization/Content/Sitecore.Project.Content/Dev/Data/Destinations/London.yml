@@ -1,0 +1,28 @@
+﻿---
+ID: "411840a3-78e3-4a4b-a74b-a2b53f3b9e3d"
+Parent: "1d9942c9-a516-430c-a31b-0fa6cfbe6e73"
+Template: "8cb7b311-a4a1-44dd-afd7-264f9f148462"
+Path: /sitecore/content/Dev/Data/Destinations/London
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c182963-b1e6-43b1-b5d2-05648d68579f"
+      Hint: Name
+      Value: London
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T075306Z
+    - ID: "42d4c08e-5fa4-4c75-acff-5a93a68f6a26"
+      Hint: Thumbnail
+      Value: |
+        <image mediaid="{F6043686-843D-4218-AC3F-F89B45FE390B}" />
+    - ID: "46ffa772-84c0-4e6e-8eba-532bc77d44be"
+      Hint: Description
+      Value: Lorem ipsum dolor sit amet, nonumes imperdiet no has, possim iisque mandamus te quo, no etiam delectus facilisi pri. Partem aeterno dolorum an mel, nec in tale mundi iriure. Novum sanctus graecis his et, mel probo tacimates pertinacia cu. Qui an alia adhuc. Ut sit quando instructior, odio iracundia per ne. Usu animal docendi fierent an, mei assum temporibus ut.
+    - ID: "f4b97bad-85de-4d35-9551-70311950aad0"
+      Hint: Banner
+      Value: |
+        <image mediaid="{F6043686-843D-4218-AC3F-F89B45FE390B}" />

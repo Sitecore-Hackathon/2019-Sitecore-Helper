@@ -1,0 +1,28 @@
+﻿---
+ID: "41f01c4f-4550-4326-abd1-2ec2c1f3fda2"
+Parent: "1d9942c9-a516-430c-a31b-0fa6cfbe6e73"
+Template: "8cb7b311-a4a1-44dd-afd7-264f9f148462"
+Path: /sitecore/content/Dev/Data/Destinations/India
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c182963-b1e6-43b1-b5d2-05648d68579f"
+      Hint: Name
+      Value: India
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T075324Z
+    - ID: "42d4c08e-5fa4-4c75-acff-5a93a68f6a26"
+      Hint: Thumbnail
+      Value: |
+        <image mediaid="{2F67CB8E-04E2-4FC8-B523-DEB0D81108A0}" />
+    - ID: "46ffa772-84c0-4e6e-8eba-532bc77d44be"
+      Hint: Description
+      Value: Lorem ipsum dolor sit amet, nonumes imperdiet no has, possim iisque mandamus te quo, no etiam delectus facilisi pri. Partem aeterno dolorum an mel, nec in tale mundi iriure.
+    - ID: "f4b97bad-85de-4d35-9551-70311950aad0"
+      Hint: Banner
+      Value: |
+        <image mediaid="{2F67CB8E-04E2-4FC8-B523-DEB0D81108A0}" />

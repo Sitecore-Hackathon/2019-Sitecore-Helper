@@ -1,0 +1,21 @@
+﻿---
+ID: "42a5ea5e-74b0-4c08-bd4c-2715955d7a87"
+Parent: "8cb7b311-a4a1-44dd-afd7-264f9f148462"
+Template: "8cb7b311-a4a1-44dd-afd7-264f9f148462"
+Path: /sitecore/templates/Project/Website/Destinations/Destination/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c182963-b1e6-43b1-b5d2-05648d68579f"
+      Hint: Name
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T075008Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ajoshi

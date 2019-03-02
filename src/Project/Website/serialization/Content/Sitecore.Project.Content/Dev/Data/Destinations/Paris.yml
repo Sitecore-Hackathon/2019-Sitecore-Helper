@@ -1,0 +1,32 @@
+﻿---
+ID: "2612f919-6c71-414f-a8ea-751eca387025"
+Parent: "1d9942c9-a516-430c-a31b-0fa6cfbe6e73"
+Template: "8cb7b311-a4a1-44dd-afd7-264f9f148462"
+Path: /sitecore/content/Dev/Data/Destinations/Paris
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c182963-b1e6-43b1-b5d2-05648d68579f"
+      Hint: Name
+      Value: Paris
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T074854Z
+    - ID: "42d4c08e-5fa4-4c75-acff-5a93a68f6a26"
+      Hint: Thumbnail
+      Value: |
+        <image mediaid="{6EE48194-CC92-4870-845C-764B4A617B1F}" />
+    - ID: "46ffa772-84c0-4e6e-8eba-532bc77d44be"
+      Hint: Description
+      Value: Has ut viderer utroque accumsan. Eum esse inani deterruisset id, ut augue inimicus usu. In ius verear propriae forensibus. Percipit perpetua petentium vel cu. No laboramus voluptatum eum, eam id fugit fastidii moderatius, novum laudem est ad. Nostro scripta ea mel, postulant sapientem expetendis no cum. Dicat lobortis argumentum nam eu, nullam eloquentiam ius ne.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ajoshi
+    - ID: "f4b97bad-85de-4d35-9551-70311950aad0"
+      Hint: Banner
+      Value: |
+        <image mediaid="{6EE48194-CC92-4870-845C-764B4A617B1F}" />

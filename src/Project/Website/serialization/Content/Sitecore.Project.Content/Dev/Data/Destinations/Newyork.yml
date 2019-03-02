@@ -1,0 +1,27 @@
+﻿---
+ID: "afa5efb1-f330-46ce-9fc9-7c04b7471837"
+Parent: "1d9942c9-a516-430c-a31b-0fa6cfbe6e73"
+Template: "8cb7b311-a4a1-44dd-afd7-264f9f148462"
+Path: /sitecore/content/Dev/Data/Destinations/Newyork
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c182963-b1e6-43b1-b5d2-05648d68579f"
+      Hint: Name
+      Value: Newyork
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T075315Z
+    - ID: "42d4c08e-5fa4-4c75-acff-5a93a68f6a26"
+      Hint: Thumbnail
+      Value: |
+        <image mediaid="{D5CA4FDA-F6E4-4E56-B7BA-BC054BB50D28}" />
+    - ID: "46ffa772-84c0-4e6e-8eba-532bc77d44be"
+      Hint: Description
+      Value: |
+        <br />
+        <br />
+        Has ut viderer utroque accumsan. Eum esse inani deterruisset id, ut augue inimicus usu. In ius verear propriae forensibus. Percipit perpetua petentium vel cu. No laboramus voluptatum eum, eam id fugit fastidii moderatius, novum laudem est ad. Nostro scripta ea mel, postulant sapientem expetendis no cum. Dicat lobortis argumentum nam eu, nullam eloquentiam ius ne.
