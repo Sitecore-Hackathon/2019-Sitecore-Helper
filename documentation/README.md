@@ -60,7 +60,8 @@ Examples of things to include are the following.
 
 ## Summary
 
-** Travel Mania and Universal Trackor: **
+## Title- Travel Mania and Universal Trackor:
+
 **Category:** Universal Trackor
 
 What is the purpose of your module? What problem does it solve and how does it do that?
@@ -124,7 +125,7 @@ In this case we have Mobile App (focused on travel business) using Xamarine whic
 Now when user open this Mobile App (Travel Mania) business wants to track the page views, the channel from where the visit has been made, if any Goals has been trigerred based on predefined events and so on.
 Also- the source of data would be Sitecore in this case which means contents for Mobile App home page and inner pages (destinatiion pages) would come directky from Sitecore.
 
-How does the end user/developer use the Module?
+## How does the end user/developer use the Module?
 
 In order to solve this problem we will use Universal tracking to sync data from Mobile App(based on Xamarine) and push it back to xDB using xConnect.
 As part of this we would also create following Marketing Items in Sitecore under Sitecore Marketing Control Panel which includes:
