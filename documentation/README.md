@@ -83,4 +83,4 @@ Provide documentation  about your module, how do the users use your module, wher
 ## Video
 
 
-[![Sitecore Hackathon Video Embedding Alt Text](https://3.bp.blogspot.com/-OkcWf2J3h9Q/WWy2SyaPSsI/AAAAAAAAAGs/f2ovc4AMFTUfC_GLF7k8EewAscJid0MggCLcBGAs/s1600/sitecore-hackathon-logo.png)](https://youtu.be/Qqm7Fq0GC30)
+[![Sitecore Hackathon Video Embedding Alt Text](https://www.jflh.ca/img/2018-04-27-hackathon/Sitecore-Hackathon-Logo.png)](https://youtu.be/Qqm7Fq0GC30)
