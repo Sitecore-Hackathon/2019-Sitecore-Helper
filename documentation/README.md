@@ -22,7 +22,7 @@ What is the purpose of your module? What problem does it solve and how does it d
 1. Sitecore 9.1. Make sure Analytics is enable and xconnect service is up
 2. Xamarin SDK setup and android emulator setup.We have verified the application with Android 8.1 – API 27.
 3. Make sure that the emulator host file has sitecore9.1 instance host name and collection service url. You can refer https://android.stackexchange.com/questions/190627/edit-hosts-file-on-android-studio-messed-up-my-emulator 
-4. Install Sitecore Universal Tracker 1.0.0 installed
+4. Sitecore Universal Tracker 1.0.0 installed
 5. check for any issue in the application using  https://sitecore.tracking.collection.service/status/ and https://sitecore.tracking.processing.service/status   
 
 
@@ -83,4 +83,4 @@ Provide documentation  about your module, how do the users use your module, wher
 ## Video
 
 
-[![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
+[![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://youtu.be/Qqm7Fq0GC30)
