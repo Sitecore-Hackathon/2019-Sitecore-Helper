@@ -15,7 +15,7 @@ using static Android.Support.V7.Widget.RecyclerView;
 using Android.Content;
 using Sitecore.Feature.MobileApp.Models;
 using System.Collections.Generic;
-using Sitecore.Foundation.Tracker;
+using Sitecore.Foundation.Tracker.UT;
 
 namespace Sitecore.Feature.MobileApp
 {
@@ -33,14 +33,17 @@ namespace Sitecore.Feature.MobileApp
             try
             {
                 base.OnCreate(savedInstanceState);
-                SetContentView(Resource.Layout.Main);
+                SetContentView(Resource.Layout.Main);    //Setting the layout for Home page
                 _destinations = new List<Destination>();
-                SetupRecyclerView();
+                SetupRecyclerView();  // creating card layout for destinations
                 SetupCollapsingToolbar();
-                LoadBackdropCover();
+                LoadBackdropCover();  // loading banner image
 
 
-                Foundation.Tracker.UT.RegisterInteractions register = new Foundation.Tracker.UT.RegisterInteractions();
+             /* Here we are tracking the activity of the user using universal tracker.
+                we are triggering a event of type goal and event in the below method  */
+
+                RegisterInteractions register = new RegisterInteractions();
 
                 register.Register();
 
@@ -53,6 +56,7 @@ namespace Sitecore.Feature.MobileApp
             
         }
 
+        // This method is for loading the banner image
         private  void LoadBackdropCover()
         {
             try
@@ -67,7 +71,7 @@ namespace Sitecore.Feature.MobileApp
             }
         }
 
-
+        //This method is for setting up card layout
         private void SetupRecyclerView()
         {
             _recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
@@ -82,6 +86,8 @@ namespace Sitecore.Feature.MobileApp
 
 
         }
+
+        //This method is for getting the Destinations. The Destinations are displayed in card and tile layout
         private async void DestinationList()
         {
             DestinationHelper dm = new DestinationHelper();
@@ -112,6 +118,8 @@ namespace Sitecore.Feature.MobileApp
                 this._collapsingToolbar.SetTitle(" ");
             }
         }
+
+        //This method is for redirecting the user to next page on click of any of the card
         void OnItemClick(object sender, string id)
         {
             Intent intent = new Intent(this, typeof(PageDetailActivity));

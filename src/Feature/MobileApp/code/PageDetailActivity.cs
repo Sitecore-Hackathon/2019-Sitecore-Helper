@@ -23,11 +23,12 @@ namespace Sitecore.Feature.MobileApp
         {
             base.OnCreate(savedInstanceState);
 
-            string id = Intent.GetStringExtra("id");
-            SetContentView(Resource.Layout.DetailPage);
+            string id = Intent.GetStringExtra("id"); //getting the sitecore id of the item clicked
+            SetContentView(Resource.Layout.DetailPage);  // setting layout for second page
             SetupRecyclerView(id);
         }
 
+        // Setting up recycler view
         private void SetupRecyclerView(string id)
         {
             _recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView2);
@@ -42,6 +43,7 @@ namespace Sitecore.Feature.MobileApp
             GetData(id);
         }
 
+        //get detailed info about a destination
         private async void GetData(string id)
         {
             DestinationHelper dm = new DestinationHelper();
@@ -52,12 +54,11 @@ namespace Sitecore.Feature.MobileApp
             }
 
         }
+
+        //On click of book now button
         void OnItemClick(object sender, string id)
         {
-            // Intent intent = new Intent(this, typeof(BookingConfirmationActivity));
-
-            // intent.PutExtra("id", id);
-            //     StartActivity(intent);
+            
         }
 
         private void AppBarLayout_OffsetChanged(object sender, AppBarLayout.OffsetChangedEventArgs e)

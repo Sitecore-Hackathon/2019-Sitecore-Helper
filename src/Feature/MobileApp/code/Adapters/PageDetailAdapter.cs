@@ -27,6 +27,7 @@ namespace Sitecore.Feature.MobileApp.Adapters
             _datasource = datasource;
             _context = context;
         }
+        //This method is to update the source for list
         public void UpdateDataSource(Destination datasource)
         {
             _datasource = datasource;
@@ -40,6 +41,7 @@ namespace Sitecore.Feature.MobileApp.Adapters
             }
         }
 
+        //This method returns the count of items
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             Destination destinationDetail = _datasource;
@@ -58,7 +60,7 @@ namespace Sitecore.Feature.MobileApp.Adapters
                 }
             }
         }
-
+        //this method is for binding the items
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             View itemView = LayoutInflater.From(parent.Context).
@@ -66,6 +68,7 @@ namespace Sitecore.Feature.MobileApp.Adapters
             PageDetailViewHolder vh = new PageDetailViewHolder(itemView, OnClick);
             return vh;
         }
+        //On click of thumb nail image
         void OnClick(string id)
         {
             if (ItemClick != null)

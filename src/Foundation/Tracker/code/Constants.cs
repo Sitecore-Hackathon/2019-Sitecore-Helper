@@ -25,7 +25,8 @@ namespace Sitecore.Foundation.Tracker
             public const string SitecoreMediaLibraryRoot = "/sitecore/media library";
             public const string SitecoreMediaPrefix = "~/media/";
             public const string SitecoreDefaultMediaResourceExtension = "ashx";
-       
+            public const string TrackerItemPath = "/sitecore/system/Settings/Foundation/Tracker/Tracker Setting Items/Tracker Settings Mobile App";
+
 
         }
     }

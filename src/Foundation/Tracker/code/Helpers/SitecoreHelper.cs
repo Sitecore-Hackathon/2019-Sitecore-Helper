@@ -14,7 +14,7 @@ namespace Sitecore.Foundation.Tracker.Helpers
 {
     public class SitecoreHelper
     {
-
+        //gets the item or child item on specifying the path
         public async Task<ScItemsResponse> GetItemByPath(string itemPath, PayloadType itemLoadType, List<ScopeType> itemScopeTypes, string itemLanguage = "en")
         {
             try
@@ -41,7 +41,7 @@ namespace Sitecore.Foundation.Tracker.Helpers
         }
 
 
-
+        //gets the item or child item on specifying the id
         public async Task<ScItemsResponse> GetItemById(string itemId, PayloadType itemLoadType, List<ScopeType> itemScopeTypes, string itemLanguage = "en")
         {
             try
@@ -66,6 +66,7 @@ namespace Sitecore.Foundation.Tracker.Helpers
             }
         }
 
+        //for configuring the session with sitecore
         private ISitecoreWebApiSession GetSession(string userName = "", string password = "")
         {
 
@@ -90,7 +91,7 @@ namespace Sitecore.Foundation.Tracker.Helpers
                 return session;
             }
         }
-
+        //gets the item or child item on specifying the query
         public async Task<ScItemsResponse> GetItemByQuery(string query, string itemLanguage = "en")
         {
             try

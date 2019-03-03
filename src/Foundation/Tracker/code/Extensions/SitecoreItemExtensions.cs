@@ -15,6 +15,7 @@ namespace Sitecore.Foundation.Tracker.Extensions
 {
     public static class SitecoreItemExtensions
     {
+        //Gets the value from field
         public static string GetValueFromField(this ISitecoreItem item, string fieldName)
         {
             if (item == null) return string.Empty;
@@ -25,6 +26,7 @@ namespace Sitecore.Foundation.Tracker.Extensions
             return item[fieldName].RawValue;
         }
 
+        //Gets the image url from media field
         public static string GetImageUrlFromMediaField(this ISitecoreItem item, string mediafieldName,
                                                        string websiteUrl = null)
         {
