@@ -15,6 +15,7 @@ namespace Sitecore.Foundation.Tracker
         }
         public struct Settings
         {
+            // This is Sitecore 9 instance url. we are fetching data from this instance. Please change it according to your instnace name
             public const string ResetBaseUrl = "http://sc91.local";
             public const string SitecoreUserName = "admin";
             public const string SitecorePassword = "b";

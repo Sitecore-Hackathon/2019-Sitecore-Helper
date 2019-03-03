@@ -16,6 +16,7 @@ namespace Sitecore.Feature.MobileApp
     {
         public struct Settings
         {
+            // This is Sitecore 9 instance url. we are fetching data from this instance. Please change it according to your instnace name
             public const string ResetBaseUrl = "http://sc91.local";
             public const string BackdropTitle = "BackdropTitle";
             public const string BackdropSubtitle = "BackdropSubtitle";
@@ -25,7 +26,7 @@ namespace Sitecore.Feature.MobileApp
         public struct ConstantPath
         {
             public const string RepositoryPath = "/sitecore/content/Dev/Data/Destinations";
-         
+
         }
         public struct Templates
         {
