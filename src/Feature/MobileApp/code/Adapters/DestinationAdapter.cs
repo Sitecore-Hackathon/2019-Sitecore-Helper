@@ -30,6 +30,7 @@ namespace Sitecore.Feature.MobileApp.Adapter
             _context = context;
         }
 
+        //This method is to update the source for list
         public void UpdateDataSource(List<Destination> datasource)
         {
             _datasource = datasource;
@@ -38,6 +39,7 @@ namespace Sitecore.Feature.MobileApp.Adapter
 
         #region Overrides
 
+        //This method returns the count of items
         public override int ItemCount
         {
             get
@@ -46,6 +48,7 @@ namespace Sitecore.Feature.MobileApp.Adapter
             }
         }
 
+        //this method is for binding the items
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             Destination album = _datasource[position];
@@ -79,6 +82,7 @@ namespace Sitecore.Feature.MobileApp.Adapter
 
         #region Events
 
+        //trigger events for popup click
         private void Popup_MenuItemClick(object sender, Android.Support.V7.Widget.PopupMenu.MenuItemClickEventArgs e)
         {
             switch (e.Item.ItemId)
@@ -93,7 +97,7 @@ namespace Sitecore.Feature.MobileApp.Adapter
                     break;
             }
         }
-
+        //On click of thumb nail image
         void OnClick(string id)
         {
             if (ItemClick != null)

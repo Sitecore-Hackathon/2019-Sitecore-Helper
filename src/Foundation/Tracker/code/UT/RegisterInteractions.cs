@@ -1,4 +1,5 @@
-﻿using Sitecore.Foundation.Tracker.Extensions;
+﻿using Android.Util;
+using Sitecore.Foundation.Tracker.Extensions;
 using Sitecore.Foundation.Tracker.Helpers;
 using Sitecore.Foundation.Tracker.Models;
 using Sitecore.UniversalTrackerClient.Entities;
@@ -18,11 +19,14 @@ namespace Sitecore.Foundation.Tracker.UT
             _sitecoreHelper = new SitecoreHelper();
 
         }
+
+        //In this method we are tracking the user and collecting the data in Universal tracker DB. After collection data is processed
+        //using processing service and push to xDB
         public async Task<TrackerSettings> GetTrackerSettings()
         {
             string trackerSettingsFullPath = string.Empty;
             string query = string.Empty;
-            query = "/sitecore/system/Settings/Foundation/Tracker/Tracker Setting Items/Tracker Settings Mobile App";
+            query = Constants.Settings.TrackerItemPath;
 
             TrackerSettings ts = new TrackerSettings();
 
@@ -53,10 +57,10 @@ namespace Sitecore.Foundation.Tracker.UT
                 TrackerSettings trackerSettings = await ri.GetTrackerSettings();
                 if (trackerSettings.IsTrackingActive)
                 {
-                    string instanceUrl = trackerSettings.ServiceURL;
-                    string channelId = trackerSettings.ChannelID;
-                    string eventDefinitionId = trackerSettings.Event;
-                    string goalDefinitionId = trackerSettings.Goals;
+                    string instanceUrl = trackerSettings.ServiceURL;//Collection service url
+                    string channelId = trackerSettings.ChannelID; //channel id must be add in config.json
+                    string eventDefinitionId = trackerSettings.Event;//event id
+                    string goalDefinitionId = trackerSettings.Goals;//goal id
                     var defaultInteraction = UTEntitiesBuilder.Interaction()
                                             .ChannelId(channelId)
                                             .Initiator(InteractionInitiator.Contact)
@@ -68,13 +72,13 @@ namespace Sitecore.Foundation.Tracker.UT
                                         .BuildSession()
                             )
                     {
-
+                        //trigerring the event
                         var eventRequest = UTRequestBuilder.EventWithDefenitionId(eventDefinitionId)
                                             .AddCustomValues("MobileAppUniversalTraker", "10")
                                             .Timestamp(DateTime.Now)
                                             .Build();
                         var eventResponse = await session.TrackEventAsync(eventRequest);
-
+                        //Triggering the goal
                         var goalRequest = UTRequestBuilder.GoalEvent(goalDefinitionId, DateTime.Now).Build();
                         var goalResponse = await session.TrackGoalAsync(goalRequest);
                     }
@@ -82,7 +86,7 @@ namespace Sitecore.Foundation.Tracker.UT
             }
             catch (Exception ex)
             {
-
+                Log.Error("Error occurred in Regitser methos of RegisterInteraction",ex.Message);
             }
         }
 

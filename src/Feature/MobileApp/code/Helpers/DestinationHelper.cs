@@ -8,16 +8,17 @@ using Sitecore.Foundation.Tracker.Extensions;
 
 namespace Sitecore.Feature.MobileApp.Helpers
 {
-   
+
     public class DestinationHelper
     {
         private SitecoreHelper _sitecoreHelper;
 
         public DestinationHelper()
         {
-           
+
             _sitecoreHelper = new SitecoreHelper();
         }
+        //This method is for getting the list of destinations
         public async Task<List<Destination>> GetDestinations()
         {
             List<Destination> Destinations = new List<Destination>();
@@ -49,7 +50,7 @@ namespace Sitecore.Feature.MobileApp.Helpers
             return Destinations;
         }
 
-
+        //Get the sitecore media url
         public async Task<string> GetMediaUrl(string path, string field)
         {
             string mediaUrl = string.Empty;
@@ -79,8 +80,10 @@ namespace Sitecore.Feature.MobileApp.Helpers
             return mediaUrl;
         }
 
+        //Gets the detail about each destination
         public async Task<Destination> GetTravelDestinationDetail(string id)
-        {   Destination destinationDescription = new Destination();
+        {
+            Destination destinationDescription = new Destination();
 
             try
             {

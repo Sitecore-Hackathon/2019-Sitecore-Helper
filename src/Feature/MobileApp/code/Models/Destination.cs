@@ -12,6 +12,7 @@ using Android.Widget;
 
 namespace Sitecore.Feature.MobileApp.Models
 {
+    //Fields for each Destination
     public class Destination
     {
         public string SitecoreID { get; internal set; }
